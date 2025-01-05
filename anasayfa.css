@@ -1,0 +1,52 @@
+
+    #sidebarAccordion {
+        background-color: #343a40;  /* Navbar'ın koyu rengi */
+        border: none;               /* Kenar çerçevesini kaldır */
+        border-radius: 10px;        /* Köşeleri yuvarlat */
+        padding: 10px;
+    }
+
+    .accordion-item {
+        margin-bottom: 10px;
+        border-radius: 8px;
+        overflow: hidden;
+    }
+
+    .accordion-button {
+        background-color: #2d3033;  /* Navbar'ın hover tonuna uygun */
+        color: rgb(198, 198, 198);               /* Yazılar beyaz */
+        font-weight: bold;
+        border: none;
+    }
+
+    .accordion-button:hover {
+        background-color: #212529;  /* Daha koyu bir ton */
+    }
+
+    .accordion-body {
+        background-color: #3c4045;  /* Sidebar iç kısmı */
+        color: white;
+    }
+
+    .list-group-item {
+        background-color: #3c4045;
+        color: rgb(111, 26, 26);
+        border: none;
+        margin: 3px 0;
+    }
+
+    .list-group-item:hover {
+        background-color: #212529;
+    }
+    
+    .alt-baslik {
+        color: #294d78; /* Bağlantı rengini yeşil yapar */
+        text-decoration: none; /* Alt çizgiyi kaldırır */
+
+    }
+    .col-md-9 {
+        height: 100%; /* Yüksekliği tam olarak doldurur */
+        padding: 20px; /* İçerik etrafında boşluk bırakır */
+        background-color: #f4f4f4; /* Arka plan rengi ekleyin, görünürlüğü artırır */
+    }
+    

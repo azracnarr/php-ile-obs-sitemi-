@@ -1,0 +1,97 @@
+/* Genel stil */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Sayfanın tamamını kapla */
+    background-image: url('üniversite.jpg'); /* Resmin yolu */
+    background-size: cover; /* Resmi ekranı kaplayacak şekilde ölçeklendir */
+    background-position: center; /* Resmi ortala */
+    position: relative;
+}
+
+/* Arka planı bulanıklaştırma katmanı */
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('üniversite.jpg'); /* Aynı resmi buraya tekrar ekleyin */
+    background-size: cover;
+    background-position: center;
+    filter: blur(8px); /* Arka planı bulanıklaştır */
+    z-index: -1; /* Arka planda tut */
+}
+
+/* Sayfa içeriği üzerine gelen katman */
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Ortaya hizalama */
+    width: 100%;
+    max-width: 500px; /* Giriş formu genişliği */
+    background-color: rgba(0, 0, 0, 0.6); /* Arka planın şeffaflığı */
+    border-radius: 8px;
+    padding: 30px;
+    box-sizing: border-box;
+    color: #fff; /* Yazı rengi beyaz */
+    z-index: 1; /* Formun ön planda görünmesini sağlar */
+}
+
+/* Başlık stil */
+h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Form öğeleri */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Form elemanları arasına boşluk */
+}
+
+/* Etiket ve input stilleri */
+label {
+    font-size: 16px;
+    color: #fff; /* Etiket rengi beyaz */
+}
+
+input[type="text"],
+input[type="password"] {
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+}
+
+/* Submit butonu */
+input[type="submit"] {
+    background-color: #4cafa2;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color:rgb(54, 82, 133);
+}
+
+/* Hata mesajı */
+.error-message {
+    color: rgb(255, 0, 0);
+    font-size: 14px;
+    text-align: center;
+    margin-top: 10px;
+
+}
